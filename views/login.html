@@ -1,0 +1,57 @@
+<main class="bg-white p-8 rounded-xl shadow-lg w-full max-w-sm">
+  <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Login</h1>
+
+  <form class="space-y-5">
+    <div class="flex flex-col">
+      <label for="userId" class="text-sm font-semibold text-gray-600 mb-1"
+        >Username or Email</label
+      >
+      <input
+        type="text"
+        id="userId"
+        placeholder="Enter your username"
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition shadow-sm"
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <label for="password" class="text-sm font-semibold text-gray-600 mb-1"
+        >Password</label
+      >
+      <div class="relative flex items-center">
+        <input
+          type="password"
+          id="password"
+          placeholder="••••••••"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition shadow-sm"
+        />
+        <button
+          type="button"
+          id="toggleBtn"
+          class="absolute right-3 text-xs font-bold text-blue-600 uppercase tracking-wider hover:text-blue-800"
+        >
+          Show
+        </button>
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      id="loginBtn"
+      class="w-full bg-blue-600 text-white font-bold py-2.5 rounded-lg hover:bg-blue-700 transform active:scale-95 transition duration-150 shadow-md"
+    >
+      Log in
+    </button>
+
+    <p class="text-center text-sm text-gray-500 mt-6">
+      Don't have an account?
+      <button
+        type="button"
+        id="toSignup"
+        class="text-blue-600 font-semibold hover:underline cursor-pointer"
+      >
+        Sign up here
+      </button>
+    </p>
+  </form>
+</main>
